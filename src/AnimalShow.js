@@ -23,17 +23,18 @@ const AnimalShow = ({ type }) => {
     setClicks(clicks + 1);
   };
 
+  const altText = `Illustration of a ${type}`;
+
   return (
     <div onClick={handleClick} className="animal-show">
-      <img src={svgMap[type]} className="animal" />
+      <img src={svgMap[type]} alt={altText} className="animal" />
 
       <img
         src={heart}
+        alt="Heart"
         style={{ width: 10 + 10 * clicks + "px" }}
         className="heart"
       />
     </div>
   );
 };
-
-export default AnimalShow;
