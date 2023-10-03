@@ -23,6 +23,7 @@ const AnimalShow = ({ type }) => {
     setClicks(clicks + 1);
   };
 
+  // Choose a meaningful alt text based on the type of animal
   const altText = `Illustration of a ${type}`;
 
   return (
@@ -38,3 +39,4 @@ const AnimalShow = ({ type }) => {
     </div>
   );
 };
+export default AnimalShow; 
